@@ -2,11 +2,48 @@
 
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Dense, Activation
-from keras.optimizers import SGD
+from keras.layers import Dense, Activation, Dropout
+from keras.optimizers import SGD, RMSProp
 from keras.regularizers import l1, l2, l1_l2
 from keras.callbacks import EarlyStopping, ModelCheckpoint
-import argparse, tarfile, os, tempfile, shutil
+import argparse, tarfile, os, tempfile, shutil, json
+
+def create_model():
+    with open('hyperparameters.json', 'r') as f:
+        spec = json.load(f)
+
+    model = Sequential()
+
+    layer = spec['layers']
+    while layer is not None:
+        units = layer.pop('units')
+        dropout = layer.pop('dropout')
+        model.add(Dense(
+            layer['units'],
+            input_shape=3,
+            **layer
+        ))
+
+        if dropout is not None:
+            model.add(Dropout(dropout['rate']))
+
+        layer = layer.pop('next', None)
+
+    opt = spec.pop('optimizer')
+    if opt == 'sgd':
+        opt = SGD(lr=spec['lr'])
+    elif opt == 'rmsprop':
+        opt = RMSProp(lr=spec['lr'])
+    model.compile(
+        optimizer=opt,
+        loss=spec['loss']
+    )
+
+
+def write_output(loss, acc):
+    with open('performance.json', 'w') as f:
+        json.dump({'loss': loss ,'acc': acc})
+
 
 if __name__ == "__main__":
 
@@ -19,7 +56,7 @@ if __name__ == "__main__":
                         help='File name base (no extension) ' +
                         'for saving model structure and weights (two separate ' +
                         'files).')
-    
+
     parser.add_argument('-N','--num-epochs',
                         default=10, type=int,
                         help='Number of epochs')
@@ -67,11 +104,18 @@ if __name__ == "__main__":
 
     # Standardize the input so that it has mean 0 and std dev. of 1.  This helps
     # tremendously with training performance.
-    inputMeans = inputs[0:int(inputs.shape[0]*args.train_fraction),:].mean(axis=0)
-    inputStdDevs = inputs[0:int(inputs.shape[0]*args.train_fraction),:].std(axis=0)
+    # inputMeans = inputs[0:int(inputs.shape[0]*args.train_fraction),:].mean(axis=0)
+    # inputStdDevs = inputs[0:int(inputs.shape[0]*args.train_fraction),:].std(axis=0)
+    # inputs = (inputs-inputMeans)/inputStdDevs
+    # outputMeans = outputs[0:int(outputs.shape[0]*args.train_fraction)].mean(axis=0)
+    # outputStdDevs = outputs[0:int(outputs.shape[0]*args.train_fraction)].std(axis=0)
+    # outputs = (outputs-outputMeans)/outputStdDevs
+
+    inputMeans = inputs.mean(axis=0)
+    inputStdDevs = inputs.std(axis=0)
     inputs = (inputs-inputMeans)/inputStdDevs
-    outputMeans = outputs[0:int(outputs.shape[0]*args.train_fraction)].mean(axis=0)
-    outputStdDevs = outputs[0:int(outputs.shape[0]*args.train_fraction)].std(axis=0)
+    outputMeans = outputs.mean(axis=0)
+    outputStdDevs = outputs.std(axis=0)
     outputs = (outputs-outputMeans)/outputStdDevs
 
     npFileName = 'std.npz'
@@ -82,59 +126,70 @@ if __name__ == "__main__":
                         outputMeans=outputMeans,
                         outputStdDevs=outputStdDevs)
 
-    # Initialize the appropriate regularizer (if any)
-    reg = None
-    if args.reg_type == "l1":
-        reg = l1(args.reg_penalty)
-    elif args.reg_type == "l2":
-        reg = l1(args.reg_penalty)
-    elif args.reg_type == "l1_l2":
-        reg = l1_l2(args.reg_penalty)
+    if False:
+        # Initialize the appropriate regularizer (if any)
+        reg = None
+        if args.reg_type == "l1":
+            reg = l1(args.reg_penalty)
+        elif args.reg_type == "l2":
+            reg = l1(args.reg_penalty)
+        elif args.reg_type == "l1_l2":
+            reg = l1_l2(args.reg_penalty)
 
-    # Check the requested layers.  If none, make the simplest
-    # possible: 1 layer with number of nodes equal to the size of the
-    # input.
-    if hasattr(args,'layers') and args.layers != None:
-        layers = args.layers
-    else:
-        layers = [inputs.shape[1]]
+        # Check the requested layers.  If none, make the simplest
+        # possible: 1 layer with number of nodes equal to the size of the
+        # input.
+        if hasattr(args,'layers') and args.layers != None:
+            layers = args.layers
+        else:
+            layers = [inputs.shape[1]]
 
-    
-    # Build a model
-    model = Sequential()
-    print layers
-    # First layer
-    model.add(Dense(1,input_dim=3))
-    model.add(Activation('linear'))
 
-    model.compile(loss='mse',
-                  optimizer='adam')
+        # Build a model
+        model = Sequential()
+        #print layers
+        # First layer
+        model.add(Dense(1,input_dim=3))
+        model.add(Activation('linear'))
 
+        model.compile(loss='mse',
+                      optimizer='adam')
+
+    model = create_model()
+    train_split = int(inputs.shape[0] * args.train_fraction)
+    model.fit(
+        inputs[0:train_split],
+        outputs[0:train_split],
+        batch_size=256,
+        epochs=25
+    )
+
+    loss = model.evaluate(inputs[train_split:], outputs[train_split:], batch_size=256)
+    write_output(loss, 0)
     # Add callbacks
-    filepath = 'model.h5'
-    outFileList.append(filepath)
-    checkpoint = ModelCheckpoint(os.path.join(tmpDirName,filepath), monitor = 'val_loss', mode = 'min', save_best_only = True)
-    model.summary()
-    
-    hist = model.fit(inputs, outputs, validation_split=(1-args.train_fraction),
-              epochs=args.num_epochs, batch_size=args.batch_size, verbose=2, callbacks=[checkpoint])
- 
-    print 'Tarring outfiles...'
-    outfile_name = '{}_N{}_b{}_l{}_frac{:f}'.format(args.outbase,
-                                                  args.num_epochs,
-                                                  args.batch_size,
-                                                  '_'.join([str(l) for l in layers]),
-                                                  args.train_fraction)
-    if hasattr(args,'reg_type') and args.reg_type != None:
-        outfile_name += ('{}{:f}'.format(args.reg_type,args.reg_penalty))
+    # filepath = 'model.h5'
+    # outFileList.append(filepath)
+    # checkpoint = ModelCheckpoint(os.path.join(tmpDirName,filepath), monitor = 'val_loss', mode = 'min', save_best_only = True)
+    # model.summary()
 
-    outfile_name += '.tgz'                                               
-                                                          
-    with tarfile.open(outfile_name,'w:gz') as tar:
-        for f in outFileList:
-            tar.add(os.path.join(tmpDirName,f),f)
+    # hist = model.fit(inputs, outputs, validation_split=(1-args.train_fraction),
+    #           epochs=args.num_epochs, batch_size=args.batch_size, verbose=2, callbacks=[checkpoint])
 
-        shutil.rmtree(tmpDirName)
-
-    print 'Done.'
-
+    # print 'Tarring outfiles...'
+    # outfile_name = '{}_N{}_b{}_l{}_frac{:f}'.format(args.outbase,
+    #                                               args.num_epochs,
+    #                                               args.batch_size,
+    #                                               '_'.join([str(l) for l in layers]),
+    #                                               args.train_fraction)
+    # if hasattr(args,'reg_type') and args.reg_type != None:
+    #     outfile_name += ('{}{:f}'.format(args.reg_type,args.reg_penalty))
+    #
+    # outfile_name += '.tgz'
+    #
+    # with tarfile.open(outfile_name,'w:gz') as tar:
+    #     for f in outFileList:
+    #         tar.add(os.path.join(tmpDirName,f),f)
+    #
+    #     shutil.rmtree(tmpDirName)
+    #
+    # print 'Done.'

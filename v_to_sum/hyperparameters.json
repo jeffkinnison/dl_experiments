@@ -1,0 +1,31 @@
+{
+    "optimizer": "sgd",
+    "lr": 0.001,
+    "loss": "cosine_proximity",
+    "layers": {
+        "units": 128,
+        "activation": "relu",
+        "kernel_initializer": "glorot_uniform",
+        "bias_initializer": "zeros",
+        "kernel_regularizer": "l2",
+        "bias_regularizer": "l1",
+        "activity_regularizer": "l1_l2",
+        "kernel_constraint": "non_neg",
+        "bias_constraint": "unit_norm",
+        "dropout": {
+            "rate": 0.4
+        },
+        "next": {
+            "units": 64,
+            "activation": "tanh",
+            "kernel_initializer": "orthogonal",
+            "bias_initializer": "ones",
+            "kernel_regularizer": null,
+            "bias_regularizer": null,
+            "activity_regularizer": null,
+            "kernel_constraint": null,
+            "bias_constraint": null,
+            "dropout": null
+        }
+    }
+}
