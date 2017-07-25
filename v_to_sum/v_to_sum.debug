@@ -1,0 +1,417 @@
+2017/07/25 14:27:40.55 work_queue_python[10795] tcp: listening on port 9000
+2017/07/25 14:27:40.55 work_queue_python[10795] wq: Using default fast abort multiplier for 'default'.
+2017/07/25 14:27:40.55 work_queue_python[10795] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:27:40.55 work_queue_python[10795] wq: Work Queue is listening on port 9000.
+2017/07/25 14:27:41.77 work_queue_python[10795] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:27:41.77 work_queue_python[10795] wq: log enabled and is being written to v_to_sum.log
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 1 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 2 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 3 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 4 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 5 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 6 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 7 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 8 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 9 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 10 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 11 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 12 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 13 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 14 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 15 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 16 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 17 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 18 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 19 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 20 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 21 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 22 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 23 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 24 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 25 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 26 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 27 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 28 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 29 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 30 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 31 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 32 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 33 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 34 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 35 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 36 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 37 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 38 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 39 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 40 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 41 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 42 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 43 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 44 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 45 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 46 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 47 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 48 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 49 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.38 work_queue_python[10795] wq: Task 50 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:27:42.39 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:27:42.39 work_queue_python[10795] dns: looking up name catalog.cse.nd.edu
+2017/07/25 14:27:42.39 work_queue_python[10795] dns: catalog.cse.nd.edu is 129.74.152.166
+2017/07/25 14:27:42.39 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:27:42.39 work_queue_python[10795] dns: looking up name backup-catalog.cse.nd.edu
+2017/07/25 14:27:42.39 work_queue_python[10795] dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2017/07/25 14:27:42.39 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:28:42.04 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:28:42.04 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:28:42.04 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:29:42.03 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:29:42.03 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:29:42.03 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:30:42.03 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:30:42.03 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:30:42.03 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:31:42.03 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:31:42.03 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:31:42.03 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:32:42.03 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:32:42.03 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:32:42.03 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:33:42.02 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:33:42.02 work_queue_python[10795] dns: looking up name catalog.cse.nd.edu
+2017/07/25 14:33:42.02 work_queue_python[10795] dns: catalog.cse.nd.edu is 129.74.152.166
+2017/07/25 14:33:42.02 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:33:42.02 work_queue_python[10795] dns: looking up name backup-catalog.cse.nd.edu
+2017/07/25 14:33:42.02 work_queue_python[10795] dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2017/07/25 14:33:42.02 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:34:42.02 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:34:42.02 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:34:42.02 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:35:42.02 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:35:42.02 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:35:42.02 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:36:42.01 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:36:42.01 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:36:42.01 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:37:42.01 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:37:42.01 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:37:42.01 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:38:02.27 work_queue_python[10795] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:38:02.27 work_queue_python[10795] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:38:02.27 work_queue_python[10795] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:38:02.27 work_queue_python[10795] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:47:31.66 work_queue_python[14678] tcp: listening on port 9000
+2017/07/25 14:47:31.66 work_queue_python[14678] wq: Using default fast abort multiplier for 'default'.
+2017/07/25 14:47:31.66 work_queue_python[14678] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:47:31.66 work_queue_python[14678] wq: Work Queue is listening on port 9000.
+2017/07/25 14:47:32.30 work_queue_python[14678] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:47:32.30 work_queue_python[14678] wq: log enabled and is being written to v_to_sum.log
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 1 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 2 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 3 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 4 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 5 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 6 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 7 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 8 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 9 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 10 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 11 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 12 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 13 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 14 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 15 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 16 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 17 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 18 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 19 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 20 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 21 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 22 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 23 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 24 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 25 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 26 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 27 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 28 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 29 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 30 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 31 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 32 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 33 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 34 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 35 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 36 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 37 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 38 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 39 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 40 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 41 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 42 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 43 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 44 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 45 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 46 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 47 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 48 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 49 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.88 work_queue_python[14678] wq: Task 50 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:47:32.89 work_queue_python[14678] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:47:32.89 work_queue_python[14678] dns: looking up name catalog.cse.nd.edu
+2017/07/25 14:47:32.89 work_queue_python[14678] dns: catalog.cse.nd.edu is 129.74.152.166
+2017/07/25 14:47:32.89 work_queue_python[14678] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:47:32.89 work_queue_python[14678] dns: looking up name backup-catalog.cse.nd.edu
+2017/07/25 14:47:32.89 work_queue_python[14678] dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2017/07/25 14:47:32.89 work_queue_python[14678] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:48:09.87 work_queue_python[14678] tcp: got connection from 10.32.82.211:53848
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: worker 10.32.82.211:53848 connected
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: 1 workers are connected in total now
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from unknown (10.32.82.211:53848): name
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: Sending project name to worker (10.32.82.211:53848)
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: tx to unknown (10.32.82.211:53848): shadho
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from unknown (10.32.82.211:53848): workqueue 7 qa-xp-004.crc.nd.edu Linux x86_64 6.0.10
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: qa-xp-004.crc.nd.edu (10.32.82.211:53848) running CCTools version 6.0.10 on Linux (operating system) with architecture x86_64 is ready
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): info worker-id worker-718d6bb8ce3f6fb19b7779e071dafe48
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): alive
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): resource workers 1 1 1
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): resource disk 918548 918548 918548
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): resource memory 128550 128550 128550
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): resource gpus 4 4 4
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): resource cores 1 1 1
+2017/07/25 14:48:09.87 work_queue_python[14678] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53848): resource tag 0
+2017/07/25 14:48:19.90 work_queue_python[14820] tcp: listening on port 9000
+2017/07/25 14:48:19.90 work_queue_python[14820] wq: Using default fast abort multiplier for 'default'.
+2017/07/25 14:48:19.90 work_queue_python[14820] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:48:19.90 work_queue_python[14820] wq: Work Queue is listening on port 9000.
+2017/07/25 14:48:21.06 work_queue_python[14820] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:48:21.06 work_queue_python[14820] wq: log enabled and is being written to v_to_sum.log
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 1 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 2 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 3 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 4 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 5 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 6 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 7 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 8 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 9 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 10 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 11 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 12 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 13 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 14 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 15 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 16 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 17 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 18 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 19 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 20 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 21 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 22 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 23 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 24 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 25 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 26 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 27 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 28 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 29 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 30 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 31 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 32 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 33 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 34 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 35 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 36 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 37 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 38 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 39 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 40 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 41 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 42 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 43 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 44 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 45 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 46 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 47 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 48 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 49 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Task 50 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:48:21.63 work_queue_python[14820] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:48:21.63 work_queue_python[14820] dns: looking up name catalog.cse.nd.edu
+2017/07/25 14:48:21.63 work_queue_python[14820] dns: catalog.cse.nd.edu is 129.74.152.166
+2017/07/25 14:48:21.63 work_queue_python[14820] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:48:21.63 work_queue_python[14820] dns: looking up name backup-catalog.cse.nd.edu
+2017/07/25 14:48:21.63 work_queue_python[14820] dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2017/07/25 14:48:21.63 work_queue_python[14820] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:48:21.90 work_queue_python[14820] tcp: got connection from 10.32.82.211:53854
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: worker 10.32.82.211:53854 connected
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: 1 workers are connected in total now
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from unknown (10.32.82.211:53854): name
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: Sending project name to worker (10.32.82.211:53854)
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: tx to unknown (10.32.82.211:53854): shadho
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from unknown (10.32.82.211:53854): workqueue 7 qa-xp-004.crc.nd.edu Linux x86_64 6.0.10
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: qa-xp-004.crc.nd.edu (10.32.82.211:53854) running CCTools version 6.0.10 on Linux (operating system) with architecture x86_64 is ready
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): info worker-id worker-718d6bb8ce3f6fb19b7779e071dafe48
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): alive
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): resource workers 1 1 1
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): resource disk 918549 918549 918549
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): resource memory 128550 128550 128550
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): resource gpus 4 4 4
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): resource cores 1 1 1
+2017/07/25 14:48:21.90 work_queue_python[14820] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53854): resource tag 0
+2017/07/25 14:49:09.42 work_queue_python[14861] tcp: listening on port 9000
+2017/07/25 14:49:09.42 work_queue_python[14861] wq: Using default fast abort multiplier for 'default'.
+2017/07/25 14:49:09.42 work_queue_python[14861] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:49:09.42 work_queue_python[14861] wq: Work Queue is listening on port 9000.
+2017/07/25 14:49:09.95 work_queue_python[14861] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:49:09.95 work_queue_python[14861] wq: log enabled and is being written to v_to_sum.log
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 1 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 2 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 3 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 4 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 5 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 6 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 7 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 8 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 9 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 10 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 11 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 12 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 13 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 14 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 15 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 16 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 17 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 18 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 19 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 20 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 21 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 22 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 23 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 24 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 25 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 26 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 27 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 28 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 29 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 30 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 31 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 32 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 33 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 34 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 35 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 36 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 37 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 38 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 39 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 40 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 41 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 42 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 43 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 44 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 45 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 46 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 47 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 48 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 49 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Task 50 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:49:10.57 work_queue_python[14861] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:49:10.57 work_queue_python[14861] dns: looking up name catalog.cse.nd.edu
+2017/07/25 14:49:10.57 work_queue_python[14861] dns: catalog.cse.nd.edu is 129.74.152.166
+2017/07/25 14:49:10.57 work_queue_python[14861] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:49:10.57 work_queue_python[14861] dns: looking up name backup-catalog.cse.nd.edu
+2017/07/25 14:49:10.57 work_queue_python[14861] dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2017/07/25 14:49:10.57 work_queue_python[14861] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:49:30.01 work_queue_python[14861] tcp: got connection from 10.32.82.211:53880
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: worker 10.32.82.211:53880 connected
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: 1 workers are connected in total now
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from unknown (10.32.82.211:53880): name
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: Sending project name to worker (10.32.82.211:53880)
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: tx to unknown (10.32.82.211:53880): shadho
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from unknown (10.32.82.211:53880): workqueue 7 qa-xp-004.crc.nd.edu Linux x86_64 6.0.10
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: qa-xp-004.crc.nd.edu (10.32.82.211:53880) running CCTools version 6.0.10 on Linux (operating system) with architecture x86_64 is ready
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): info worker-id worker-718d6bb8ce3f6fb19b7779e071dafe48
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): alive
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): resource workers 1 1 1
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): resource disk 918549 918549 918549
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): resource memory 128550 128550 128550
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): resource gpus 4 4 4
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): resource cores 1 1 1
+2017/07/25 14:49:30.01 work_queue_python[14861] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53880): resource tag 0
+2017/07/25 14:50:17.47 work_queue_python[15017] tcp: listening on port 9000
+2017/07/25 14:50:17.47 work_queue_python[15017] wq: Using default fast abort multiplier for 'default'.
+2017/07/25 14:50:17.47 work_queue_python[15017] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:50:17.47 work_queue_python[15017] wq: Work Queue is listening on port 9000.
+2017/07/25 14:50:18.61 work_queue_python[15017] wq: workers status -- total: 0, active: 0, available: 0.
+2017/07/25 14:50:18.61 work_queue_python[15017] wq: log enabled and is being written to v_to_sum.log
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 1 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 2 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 3 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 4 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 5 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 6 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 7 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 8 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 9 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 10 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 11 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 12 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 13 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 14 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 15 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 16 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 17 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 18 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 19 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 20 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 21 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 22 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.20 work_queue_python[15017] wq: Task 23 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 24 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 25 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 26 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 27 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 28 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 29 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 30 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 31 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 32 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 33 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 34 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 35 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 36 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 37 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 38 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 39 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 40 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 41 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 42 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 43 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 44 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 45 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 46 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 47 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 48 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 49 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Task 50 state change: UNKNOWN (0) to WAITING (1)
+2017/07/25 14:50:19.21 work_queue_python[15017] wq: Advertising master status to the catalog server(s) at catalog.cse.nd.edu,backup-catalog.cse.nd.edu ...
+2017/07/25 14:50:19.21 work_queue_python[15017] dns: looking up name catalog.cse.nd.edu
+2017/07/25 14:50:19.22 work_queue_python[15017] dns: catalog.cse.nd.edu is 129.74.152.166
+2017/07/25 14:50:19.22 work_queue_python[15017] debug: sending update to catalog.cse.nd.edu(129.74.152.166):9097
+2017/07/25 14:50:19.22 work_queue_python[15017] dns: looking up name backup-catalog.cse.nd.edu
+2017/07/25 14:50:19.22 work_queue_python[15017] dns: backup-catalog.cse.nd.edu is 129.74.247.43
+2017/07/25 14:50:19.22 work_queue_python[15017] debug: sending update to backup-catalog.cse.nd.edu(129.74.247.43):9097
+2017/07/25 14:50:38.12 work_queue_python[15017] tcp: got connection from 10.32.82.211:53896
+2017/07/25 14:50:38.12 work_queue_python[15017] wq: worker 10.32.82.211:53896 connected
+2017/07/25 14:50:38.12 work_queue_python[15017] wq: 1 workers are connected in total now
+2017/07/25 14:50:38.12 work_queue_python[15017] wq: rx from unknown (10.32.82.211:53896): name
+2017/07/25 14:50:38.12 work_queue_python[15017] wq: Sending project name to worker (10.32.82.211:53896)
+2017/07/25 14:50:38.12 work_queue_python[15017] wq: tx to unknown (10.32.82.211:53896): shadho
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from unknown (10.32.82.211:53896): workqueue 7 qa-xp-004.crc.nd.edu Linux x86_64 6.0.10
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: qa-xp-004.crc.nd.edu (10.32.82.211:53896) running CCTools version 6.0.10 on Linux (operating system) with architecture x86_64 is ready
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): info worker-id worker-718d6bb8ce3f6fb19b7779e071dafe48
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): alive
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): resource workers 1 1 1
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): resource disk 918549 918549 918549
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): resource memory 128550 128550 128550
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): resource gpus 4 4 4
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): resource cores 1 1 1
+2017/07/25 14:50:38.13 work_queue_python[15017] wq: rx from qa-xp-004.crc.nd.edu (10.32.82.211:53896): resource tag 0

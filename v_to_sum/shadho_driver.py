@@ -3,19 +3,19 @@ from shadho import choose, log2_randint, uniform
 
 import copy
 
-INITIALIZERS = choose('zeros', 'ones', 'orthogonal', 'glorot_uniform',
-                      'glorot_normal')
+INITIALIZERS = choose(['zeros', 'ones', 'orthogonal', 'glorot_uniform',
+                      'glorot_normal'])
 
-REGULARIZERS = choose(None, 'l1', 'l2', 'l1_l2')
+REGULARIZERS = choose([None, 'l1', 'l2', 'l1_l2'])
 
-CONSTRAINTS = choose(None, 'non_neg', 'unit_norm')
+CONSTRAINTS = choose([None, 'non_neg', 'unit_norm'])
 
-LOSSES = choose('squared_hinge', 'poisson', 'cosine_proximity'
-                'kullback_liebler_divergence', 'mean_squared_error' )
+LOSSES = choose(['squared_hinge', 'poisson', 'cosine_proximity'
+                'kullback_liebler_divergence', 'mean_squared_error'])
 
 DENSE = {
     'units': log2_randint(4, 10),
-    'activation': choose('elu', 'relu', 'selu', 'sigmoid', 'softmax', 'tanh'),
+    'activation': choose(['elu', 'relu', 'selu', 'sigmoid', 'softmax', 'tanh']),
     'kernel_initializer': INITIALIZERS,
     'bias_initializer': INITIALIZERS,
     'kernel_regularizer': REGULARIZERS,
@@ -42,8 +42,8 @@ layer3['next'] = layer4
 layer4['next'] = layer5
 
 space = {
-    'optimizer': choose('sgd', 'rmsprop', 'adagrad', 'adadelta', 'adam',
-                        'nadam'),
+    'optimizer': choose(['sgd', 'rmsprop', 'adagrad', 'adadelta', 'adam',
+                        'nadam']),
     'lr': uniform(0.00001, 1.0),
     'loss': LOSSES,
     'layers': layer1
@@ -72,6 +72,12 @@ config = {
             'cache': True
         },
         {
+            'localpath': 'train.npz',
+            'remotepath': 'train.npz',
+            'type': 'input',
+            'cache': True
+        },
+        {
             'localpath': 'out.tar.gz',
             'remotepath': 'out.tar.gz',
 
@@ -86,5 +92,6 @@ if __name__ == "__main__":
                                config,
                                use_complexity=False,
                                use_priority=False,
-                               timeout=600)
+                               timeout=600,
+                               max_tasks=50)
     opt.optimize()

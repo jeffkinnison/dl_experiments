@@ -3,10 +3,12 @@
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD, RMSProp
+from keras.optimizers import SGD, RMSprop
 from keras.regularizers import l1, l2, l1_l2
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 import argparse, tarfile, os, tempfile, shutil, json
+
+from keras import backend as K
 
 def create_model():
     with open('hyperparameters.json', 'r') as f:
@@ -15,34 +17,60 @@ def create_model():
     model = Sequential()
 
     layer = spec['layers']
+    units = layer.pop('units')
+    dropout = layer.pop('dropout', None)
+    next = layer.pop('next', None)
+
+    print(layer)
+    model.add(Dense(units, input_shape=(3,), **layer))
+    if dropout is not None:
+        model.add(Dropout(dropout['rate']))
+
+    layer = next
+
     while layer is not None:
+        print(layer)
         units = layer.pop('units')
         dropout = layer.pop('dropout')
+        next = layer.pop('next', None)
         model.add(Dense(
-            layer['units'],
-            input_shape=3,
+            units,
+            input_shape=(units,),
             **layer
         ))
 
         if dropout is not None:
             model.add(Dropout(dropout['rate']))
 
-        layer = layer.pop('next', None)
+        layer = next
+
+    model.add(Dense(1, activation='sigmoid'))
 
     opt = spec.pop('optimizer')
     if opt == 'sgd':
         opt = SGD(lr=spec['lr'])
     elif opt == 'rmsprop':
         opt = RMSProp(lr=spec['lr'])
+    
     model.compile(
         optimizer=opt,
-        loss=spec['loss']
+        loss=spec['loss'],
+        metrics=[accuracy]
     )
+
+    return model
+
+
+def accuracy(y_true, y_pred):
+    correct = K.equal(y_true - y_pred, K.zeros_like(y_true, dtype='float32'))
+    n = K.sum(K.cast(correct, 'float32'))
+    t = K.sum(K.ones_like(y_true, dtype='float32'))
+    return  n / t
 
 
 def write_output(loss, acc):
     with open('performance.json', 'w') as f:
-        json.dump({'loss': loss ,'acc': acc})
+        json.dump({'loss': loss ,'acc': acc}, f)
 
 
 if __name__ == "__main__":
@@ -161,7 +189,7 @@ if __name__ == "__main__":
         inputs[0:train_split],
         outputs[0:train_split],
         batch_size=256,
-        epochs=25
+        epochs=100
     )
 
     loss = model.evaluate(inputs[train_split:], outputs[train_split:], batch_size=256)
