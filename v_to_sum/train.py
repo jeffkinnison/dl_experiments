@@ -23,7 +23,7 @@ def create_model():
 
     print(layer)
     model.add(Dense(units, input_shape=(3,), **layer))
-    if dropout is not None:
+    if dropout is not None and 'rate' in dropout:
         model.add(Dropout(dropout['rate']))
 
     layer = next
@@ -39,7 +39,7 @@ def create_model():
             **layer
         ))
 
-        if dropout is not None:
+        if dropout is not None and 'rate' in dropout:
             model.add(Dropout(dropout['rate']))
 
         layer = next
@@ -194,6 +194,10 @@ if __name__ == "__main__":
 
     loss = model.evaluate(inputs[train_split:], outputs[train_split:], batch_size=256)
     write_output(loss, 0)
+    j = model.to_json()
+    with open('model.json', 'w') as f:
+        json.dump(j, f)
+    model.save_weights('weights.h5')
     # Add callbacks
     # filepath = 'model.h5'
     # outFileList.append(filepath)

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-#$ -q gpu@@csecri-titanxp
+#$ -q gpu@@csecri-titanxp 
+#$ -l hostname="qa-xp-004.crc.nd.edu"
 #$ -pe smp 6
 #$ -N vtosumtest
 
@@ -13,11 +14,16 @@ gpu=$(nvidia-smi -q -d PIDS | awk 'BEGIN { gpu = 0; n = 0; } /Attached/ { n += $
 
 source /afs/crc.nd.edu/user/k/klannon/local_root_rhel7/root/bin/thisroot.sh
 
-mkdir .theano
-wd=$(pwd)
-THEANO_FLAGS="base_compiledir=${wd}/.theano:$THEANO_FLAGS"
-CUDA_VISIBLE_DEVICES=$gpu
+base=$(pwd)
 
-python train.py train.npz -N 25 --train-fraction 0.85
+for i in $(seq 1 300); do
+    cd "$base/$i"
+    mkdir .theano
+    wd=$(pwd)
+    THEANO_FLAGS="base_compiledir=${wd}/.theano:$THEANO_FLAGS"
+    CUDA_VISIBLE_DEVICES=$gpu
 
-tar czf out.tar.gz performance.json
+    if [ ! -f "./performance.json" ]; then
+        python ../train.py ../train.npz
+    fi
+done

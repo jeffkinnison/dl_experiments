@@ -3,7 +3,7 @@ from shadho import choose, log2_randint, uniform
 
 import copy
 
-INITIALIZERS = choose(['zeros', 'ones', 'orthogonal', 'glorot_uniform',
+INITIALIZERS = choose(['zeros', 'ones', 'glorot_uniform',
                       'glorot_normal'])
 
 REGULARIZERS = choose([None, 'l1', 'l2', 'l1_l2'])
@@ -15,7 +15,7 @@ LOSSES = choose(['squared_hinge', 'poisson', 'cosine_proximity'
 
 DENSE = {
     'units': log2_randint(4, 10),
-    'activation': choose(['elu', 'relu', 'selu', 'sigmoid', 'softmax', 'tanh']),
+    'activation': choose(['elu', 'relu', 'sigmoid', 'softmax', 'tanh']),
     'kernel_initializer': INITIALIZERS,
     'bias_initializer': INITIALIZERS,
     'kernel_regularizer': REGULARIZERS,
@@ -87,6 +87,8 @@ config = {
 
 
 if __name__ == "__main__":
+    import os
+    import json
     opt = HyperparameterSearch(space,
                                [],
                                config,
@@ -94,4 +96,12 @@ if __name__ == "__main__":
                                use_priority=False,
                                timeout=600,
                                max_tasks=50)
-    opt.optimize()
+    #opt.optimize()
+
+    for i in range(1, 301):
+        if not os.path.isdir(str(i)):
+            os.mkdir(str(i))
+
+        _, spec = opt.forest.generate()
+        with open(os.path.join(str(i), 'hyperparameters.json'), 'w') as f:
+            json.dump(spec, f)
